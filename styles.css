@@ -49,7 +49,6 @@
 
 .footer1 {
     grid-area: footer;
-    display: absolute;
     text-align: center;
     padding: 1rem;
     font-family: 'Poppins', sans-serif;
@@ -93,7 +92,6 @@
     font-size: large;
     padding: 5rem;
     font-family: 'Stick', sans-serif;
-    /* width: auto; */
     background-color: #f2e9de;
 }
 
@@ -132,7 +130,9 @@
 .nlist  {
     height: 20px;
     text-align: center;
-    font-size: 1rem;
+    font-size: 20px;
+    width: 100px;
+    height: 30px;
 }
 
 .sd     {

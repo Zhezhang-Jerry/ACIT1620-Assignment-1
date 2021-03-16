@@ -262,6 +262,7 @@ label {
     .sidemenu   {
         list-style: none;
         width: 50px;
+        padding: 18%;
     }
     .slbuttonclose2  {
         text-align: center;

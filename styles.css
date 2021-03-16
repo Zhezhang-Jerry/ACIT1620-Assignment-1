@@ -155,6 +155,7 @@
 .itemc2     {
     position: relative;
     left: 500px;
+    width: 500px;
 }
 
 #addnotes   {
@@ -251,6 +252,7 @@ label {
     .itemc2     {
         position: relative;
         left: 80px;
+        width: 100px;
     }
     .sidebar2  {
         grid-area: sidebar;
@@ -259,6 +261,7 @@ label {
     }
     .sidemenu   {
         list-style: none;
+        width: 50px;
     }
     .slbuttonclose2  {
         text-align: center;

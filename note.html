@@ -4,11 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Stick&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Assignment1</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container2">
         <div class="item header">        
             <nav>
                 <ul class="menu">
@@ -16,8 +22,19 @@
                     <li class="hlist"><a href="note.html">Doc</a></li>
                 </ul>
             </nav></div>
-        <div class="item sidebar">>></div>
-        <div class="item content">+ create a new note</div>
+            <div class="item sidebar2"><button class="bt"
+                type="button"><<</button>
+            <ul class="sidemenu">
+                <li class="nlist">My notes</li>
+                <li class="nlist">note one</li>                
+                <li class="nlist">note two</li>
+            </ul></div>
+        <div class="item content">
+            <label for="addnotes">+</label>
+            <textarea id="addnotes" name="addnotes"
+          rows="10" cols="50">Your note here.</textarea>
+        <button>save</button>  <button>delete</button>
+        </div>
         <div class="item footer">created by Jerry Zhang</div>
 </body>
 </html>

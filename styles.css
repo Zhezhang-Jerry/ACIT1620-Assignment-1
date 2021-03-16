@@ -18,7 +18,7 @@
     grid-template-areas:
         'sidebar header header'
         'sidebar content content'
-        'sidebar footer footer';
+        'footer footer footer';
 }
 
 .header {
@@ -47,7 +47,7 @@
     font-size: 3rem;
 }
 
-.footer {
+.footer1 {
     grid-area: footer;
     display: absolute;
     text-align: center;
@@ -56,6 +56,19 @@
     background-color: #f2e9de;
 }
 
+.footer2 {
+    grid-area: footer;
+    display: absolute;
+    text-align: center;
+    padding: 1rem;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f2e9de;
+}
+
+.copyright  {
+    display: relative;
+    right: 500px;
+}
 
 .sidebar {
     grid-area: sidebar;
@@ -80,18 +93,33 @@
     font-size: large;
     padding: 5rem;
     font-family: 'Stick', sans-serif;
-    width: auto;
+    /* width: auto; */
     background-color: #f2e9de;
 }
 
 .bt {
     border: 0;
     line-height: 2.5;
+    border-radius: 10px;
+    background-color: #f2e9de;
+}
+
+.bt2 {
+    border: 0;
+    line-height: 2.5;
     padding: 0 20px;
     font-size: 1rem;
     text-align: center;
     border-radius: 10px;
-    flex-direction: column;
+    background-color: #faf4ed;
+}
+
+.slbuttonclose1  {
+    text-align: center;
+}
+
+.slbuttonclose2  {
+    text-align: right;
 }
 
 .sidemenu   {
@@ -129,6 +157,17 @@
     left: 500px;
 }
 
+#addnotes   {
+    width: 570px;
+    height: 100px;
+
+}
+
+a:link, a:visited  {
+    list-style: none;
+    text-decoration: none;
+}
+
 label,
 textarea {
     font-size: 1.5rem;
@@ -150,10 +189,10 @@ label {
 
 
 @media screen and (max-width: 375px){
-    .container {
+    .container1 {
         display: grid;
-        grid-template-rows: 3rem 43rem 3rem;
-        grid-template-columns: 3rem 1fr;
+        grid-template-rows: 3rem 45rem 3rem;
+        grid-template-columns: 5rem 1fr;
         grid-template-areas:
             'header header header'
             'sidebar content content'
@@ -175,18 +214,77 @@ label {
     }
     .sidebar {
         grid-area: sidebar;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        padding: 1rem;
+        background-color: #f2e9de;
     }
     .content {
         grid-area: content;
-        font-size: large;
         padding: 3rem;
+        font-size: smaller;
         font-family: 'Stick', sans-serif;
-        width: auto;
-    
+    }
+    .container2 {
+        display: grid;
+        grid-template-rows: 3rem 45rem 3rem;
+        grid-template-columns: 5rem 1fr;
+        grid-template-areas:
+            'sidebar header header'
+            'sidebar content content'
+            'footer footer footer';
+    }
+    .bt{
+        font-size: 10px;
+        padding: 0px;
+        text-align: center;
+    }
+    .bt2 {
+        font-size: 10px;
+        padding: 0px;
+        text-align: center;
+    }
+    .slbuttonclose1  {
+        padding: 0rem;
+    }
+    #addnotes   {
+        width: 160px;
+        height: 50px;
+    }
+    .itemc2     {
+        position: relative;
+        left: 80px;
+    }
+    .sidebar2  {
+        grid-area: sidebar;
+        padding: 0rem;
+        background-color: #faf4ed;
+    }
+    .sidemenu   {
+        list-style: none;
+    }
+    .slbuttonclose2  {
+        text-align: center;
+    }
+    .nlist  {
+        height: 30px;
+        text-align: left;
+        font-size: 0.8rem;
+    }
+    label,
+    textarea {
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+    textarea {
+        padding: 1px;
+        line-height: 1;
+        border-radius: 1px;
+        border: 1px solid;
+        box-shadow: 1px 1px 1px;
+        background-color: #faf4ed;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 10px;
     }
 }
 

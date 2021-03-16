@@ -91,6 +91,7 @@
     font-size: 1rem;
     text-align: center;
     border-radius: 10px;
+    flex-direction: column;
 }
 
 .sidemenu   {
@@ -104,6 +105,28 @@
     height: 20px;
     text-align: center;
     font-size: 1rem;
+}
+
+.sd     {
+    border: 0;
+    padding: 1 20px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #f2e9de;
+}
+
+.plus   {
+    border: 0;
+    padding: 1 20px;
+    font-size: larger;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #f2e9de;
+}
+
+.itemc2     {
+    position: relative;
+    left: 500px;
 }
 
 label,

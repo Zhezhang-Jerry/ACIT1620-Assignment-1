@@ -189,7 +189,7 @@ label {
 }
 
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 812px){
     .container1 {
         display: grid;
         grid-template-rows: 3rem 45rem 3rem;
